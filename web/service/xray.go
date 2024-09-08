@@ -116,7 +116,7 @@ func (s *XrayService) GetXrayConfig() (*xray.Config, error) {
 					if key != "email" && key != "id" && key != "password" && key != "flow" && key != "method" {
 						delete(c, key)
 					}
-					if c["flow"] == "xtls-rprx-vision-udp443" {
+					 c["flow"] == "xtls-rprx-vision-udp443" {
 						c["flow"] = "xtls-rprx-vision"
 					}
 				}
